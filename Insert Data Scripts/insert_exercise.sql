@@ -1,3 +1,6 @@
-﻿SELECT * FROM insert_into_exercise ('Push-up/Side Arm Balance', 'In plank position, bend your elbows');
+﻿--Total Synergistics
+--Agility X
+--The Challenge
+--X3 Yoga
 
-SELECT * FROM exercise
+SELECT * FROM exercise;
