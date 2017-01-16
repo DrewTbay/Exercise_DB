@@ -72,5 +72,38 @@ SELECT insert_into_exercise ('Figure 4 Series', 'Fill in later');
 SELECT insert_into_exercise ('Plow/Shoulder Stand', 'Fill in later');
 SELECT insert_into_exercise ('Fish', 'Fill in later');
 SELECT insert_into_exercise ('Shavasana', 'Fill in later');
+--CVX
+SELECT insert_into_exercise ('Press Jacks', 'Fill in later');
+SELECT insert_into_exercise ('Atlas Twist', 'Fill in later');
+SELECT insert_into_exercise ('March and Reach', 'Fill in later');
+SELECT insert_into_exercise ('Traveling Tire Twist', 'Fill in later');
+SELECT insert_into_exercise ('Frog Squat Reach', 'Fill in later');
+SELECT insert_into_exercise ('Arc Press Reach', 'Fill in later');
+SELECT insert_into_exercise ('Hop Overs', 'Fill in later');
+SELECT insert_into_exercise ('Balance Pull', 'Fill in later');
+SELECT insert_into_exercise ('Twist and Pviot', 'Fill in later');
+SELECT insert_into_exercise ('Side Reach Jumps', 'Fill in later');
+--already in Total Synergistics, wanted to show why I use a function to insert these exercises.
+SELECT insert_into_exercise ('Crescent Chair', 'Fill in later'); 
+SELECT insert_into_exercise ('Globe Squatters', 'Fill in later');
+--The Warrior
+SELECT insert_into_exercise ('Plank-Sphinx Push-ups', 'Fill in later');
+SELECT insert_into_exercise ('Speed Skater', 'Fill in later');
+SELECT insert_into_exercise ('Down Dog Crunches', 'Fill in later');
+SELECT insert_into_exercise ('Side Lunge Jumps Shot', 'Fill in later');
+SELECT insert_into_exercise ('Elevator Push-ups', 'Fill in later');
+SELECT insert_into_exercise ('Double Uppercut, Sprawls', 'Fill in later');
+SELECT insert_into_exercise ('Roller Boat', 'Fill in later');
+SELECT insert_into_exercise ('One Leg Jump Squats', 'Fill in later');
+SELECT insert_into_exercise ('Thumbs-up Push-up', 'Fill in later');
+SELECT insert_into_exercise ('Elbow, Over The Top Elbow, Sprawl', 'Fill in later');
+SELECT insert_into_exercise ('Fifer Scissor Twist', 'Fill in later');
+SELECT insert_into_exercise ('Warrior Squat Lunges', 'Fill in later');
+SELECT insert_into_exercise ('Super Burpee', 'Fill in later');
+SELECT insert_into_exercise ('Think Drills', 'Fill in later');
+SELECT insert_into_exercise ('Abrinome', 'Fill in later');
+SELECT insert_into_exercise ('Spiderman Squats', 'Fill in later');
+--Isometrix
+
 
 SELECT * FROM exercise;
