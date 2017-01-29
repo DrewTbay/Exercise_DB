@@ -1,4 +1,6 @@
-﻿--Classic, Block 1, Week 1
+﻿TRUNCATE schedule_workout;
+
+--Classic, Block 1, Week 1
 SELECT insert_into_schedule_workout('Classic','Total Synergistics',1);
 SELECT insert_into_schedule_workout('Classic','Agility X',2);
 SELECT insert_into_schedule_workout('Classic','X3 Yoga',3);
@@ -206,7 +208,44 @@ SELECT insert_into_schedule_workout('Mass','Eccentric Lower',88);
 SELECT insert_into_schedule_workout('Mass','Eccentric Upper',89);
 SELECT insert_into_schedule_workout('Mass','X3 Yoga',90);
 SELECT insert_into_schedule_workout('Mass','Dynamix',91);
-
+--Elite, Week One
+SELECT insert_into_schedule_workout('Elite','Complex Upper',1);
+SELECT insert_into_schedule_workout('Elite','X3 Ab Ripper',1);
+SELECT insert_into_schedule_workout('Elite','Complex Lower',2);
+SELECT insert_into_schedule_workout('Elite','X3 Yoga',3);
+SELECT insert_into_schedule_workout('Elite','Complex Upper',4);
+SELECT insert_into_schedule_workout('Elite','X3 Ab Ripper',4);
+SELECT insert_into_schedule_workout('Elite','Complex Lower',5);
+SELECT insert_into_schedule_workout('Elite','Pilates X',6);
+SELECT insert_into_schedule_workout('Elite','Dynamix',7);
+--Elite, Week Two
+SELECT insert_into_schedule_workout('Elite','Complex Upper',8);
+SELECT insert_into_schedule_workout('Elite','X3 Ab Ripper',8);
+SELECT insert_into_schedule_workout('Elite','Complex Lower',9);
+SELECT insert_into_schedule_workout('Elite','X3 Yoga',10);
+SELECT insert_into_schedule_workout('Elite','Complex Upper',11);
+SELECT insert_into_schedule_workout('Elite','X3 Ab Ripper',11);
+SELECT insert_into_schedule_workout('Elite','Complex Lower',12);
+SELECT insert_into_schedule_workout('Elite','Pilates X',13);
+SELECT insert_into_schedule_workout('Elite','Dynamix',14);
+--Elite, Week Three
+SELECT insert_into_schedule_workout('Elite','Complex Upper',15);
+SELECT insert_into_schedule_workout('Elite','X3 Ab Ripper',15);
+SELECT insert_into_schedule_workout('Elite','Complex Lower',16);
+SELECT insert_into_schedule_workout('Elite','X3 Yoga',17);
+SELECT insert_into_schedule_workout('Elite','Complex Upper',18);
+SELECT insert_into_schedule_workout('Elite','X3 Ab Ripper',18);
+SELECT insert_into_schedule_workout('Elite','Complex Lower',19);
+SELECT insert_into_schedule_workout('Elite','Pilates X',20);
+SELECT insert_into_schedule_workout('Elite','Dynamix',21);
+--Elite, Victroy Week
+SELECT insert_into_schedule_workout('Elite','Agility X',22);
+SELECT insert_into_schedule_workout('Elite','Dynamix',23);
+SELECT insert_into_schedule_workout('Elite','CVX',24);
+SELECT insert_into_schedule_workout('Elite','Pilates X',25);
+SELECT insert_into_schedule_workout('Elite','Isometrix',26);
+SELECT insert_into_schedule_workout('Elite','X3 Yoga',27);
+SELECT insert_into_schedule_workout('Elite','Dynamix',28);
 
 SELECT * FROM schedule_workout;
 
