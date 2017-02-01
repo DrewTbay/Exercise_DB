@@ -15,25 +15,10 @@ SELECT insert_into_exercise ('Flying Warrior', 'Fill in later');
 SELECT insert_into_exercise ('Squat Rockers', 'Fill in later');
 SELECT insert_into_exercise ('Side Rise Punch', 'Fill in later');
 SELECT insert_into_exercise ('Warrior Squat Moon', 'Fill in later');
+
 --Agility X
-SELECT insert_into_exercise ('Explode and Hold', 'Fill in later');
-SELECT insert_into_exercise ('Y Lunges', 'Fill in later');
-SELECT insert_into_exercise ('Joel Jumps Squats', 'Fill in later');
-SELECT insert_into_exercise ('Toe Tap Skater', 'Fill in later');
-SELECT insert_into_exercise ('Near and Fars', 'Fill in later');
-SELECT insert_into_exercise ('Ring Around the Posey', 'Fill in later');
-SELECT insert_into_exercise ('Scissor Kick Jumps', 'Fill in later');
-SELECT insert_into_exercise ('8 Sprint 3', 'Fill in later');
-SELECT insert_into_exercise ('Plyo V Lunge', 'Fill in later');
-SELECT insert_into_exercise ('High Step Shuffle', 'Fill in later');
-SELECT insert_into_exercise ('Gump Jump Push-ups', 'Fill in later');
-SELECT insert_into_exercise ('Tap that Line', 'Fill in later');
-SELECT insert_into_exercise ('Jump Knee Jump', 'Fill in later');
-SELECT insert_into_exercise ('Triangle Lunges', 'Fill in later');
-SELECT insert_into_exercise ('Squat Jump Lunge', 'Fill in later');
-SELECT insert_into_exercise ('3.4 Run', 'Fill in later');
-SELECT insert_into_exercise ('Long Jump Sprint', 'Fill in later');
-SELECT insert_into_exercise ('Plyo Line Push-ups', 'Fill in later');
+SELECT insert_into_exercise ('Agility X routine', 'Fill in later');
+
 --The Challenge
 SELECT insert_into_exercise ('Wide Pull-ups', 'Fill in later');
 SELECT insert_into_exercise ('Standard Push-ups', 'Fill in later');
