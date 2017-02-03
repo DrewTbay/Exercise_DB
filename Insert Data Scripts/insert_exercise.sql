@@ -1,4 +1,6 @@
-﻿--Total Synergistics
+﻿TRUNCATE exercise CASCADE;
+
+--Total Synergistics
 SELECT insert_into_exercise ('Push-up/Side Arm Balance', 'Fill in later');
 SELECT insert_into_exercise ('Crescent Chair', 'Fill in later');
 SELECT insert_into_exercise ('Pull Knee Pull', 'Fill in later');
@@ -20,7 +22,7 @@ SELECT insert_into_exercise ('Warrior Squat Moon', 'Fill in later');
 SELECT insert_into_exercise ('Agility X routine', 'Fill in later');
 
 --The Challenge
-SELECT insert_into_exercise ('Wide Pull-ups', 'Fill in later');
+SELECT insert_into_exercise ('Standard Pull-ups', 'Fill in later');
 SELECT insert_into_exercise ('Standard Push-ups', 'Fill in later');
 SELECT insert_into_exercise ('Chin-up', 'Fill in later');
 SELECT insert_into_exercise ('Miltary Push-ups', 'Fill in later');
@@ -72,9 +74,9 @@ SELECT insert_into_exercise ('Accelerator routine', 'Fill in later');
 SELECT insert_into_exercise ('Pilates routine', 'Fill in later');
 --Incinerator
 SELECT insert_into_exercise ('Renegade Row', 'Fill in later');
-SELECT insert_into_exercise ('Pull-ups', 'Fill in later');
+SELECT insert_into_exercise ('Standard Pull-ups', 'Fill in later');
 SELECT insert_into_exercise ('Floor Flys', 'Fill in later');
-SELECT insert_into_exercise ('Push-ups', 'Fill in later');
+SELECT insert_into_exercise ('Standard Push-ups', 'Fill in later');
 SELECT insert_into_exercise ('Rocket Launcher Row', 'Fill in later');
 SELECT insert_into_exercise ('Chin-ups', 'Fill in later');
 SELECT insert_into_exercise ('"A" Press', 'Fill in later');
@@ -112,7 +114,7 @@ SELECT insert_into_exercise ('Pterodactyl Flys', 'Fill in later');
 SELECT insert_into_exercise ('Rocket Launcher Kickback', 'Fill in later');
 SELECT insert_into_exercise ('Flip Flop Combo', 'Fill in later');
 SELECT insert_into_exercise ('tricep Skyfer', 'Fill in later');
-SELECT insert_into_exercise ('Kneeling Preacher Curl', 'Fill in later');
+SELECT insert_into_exercise ('Kneeler Curl', 'Fill in later');
 --Eccentric Lower
 SELECT insert_into_exercise ('Squats', 'Fill in later');
 SELECT insert_into_exercise ('Lunge', 'Fill in later');
@@ -130,7 +132,7 @@ SELECT insert_into_exercise ('Calf Dog', 'Fill in later');
 --Decelerator
 SELECT insert_into_exercise ('Bounding Squats', 'Fill in later');
 SELECT insert_into_exercise ('Crane Cracker Push-ups', 'Fill in later');
-SELECT insert_into_exercise ('Good god Squats', 'Fill in later');
+SELECT insert_into_exercise ('Good God Squats', 'Fill in later');
 SELECT insert_into_exercise ('Elevator Pull-ups', 'Fill in later');
 SELECT insert_into_exercise ('2-Pop Hop', 'Fill in later');
 SELECT insert_into_exercise ('Crawly Plyo Push-ups', 'Fill in later');
@@ -140,7 +142,7 @@ SELECT insert_into_exercise ('Joel Jump', 'Fill in later');
 SELECT insert_into_exercise ('Starfish Push-ups', 'Fill in later');
 SELECT insert_into_exercise ('Duper 2', 'Fill in later');
 SELECT insert_into_exercise ('Vaulter Pull-ups', 'Fill in later');
-SELECT insert_into_exercise ('Elevator tiptoe Squats', 'Fill in later');
+SELECT insert_into_exercise ('Elevator Tiptoe Squats', 'Fill in later');
 SELECT insert_into_exercise ('Superman/Bow', 'Fill in later');
 SELECT insert_into_exercise ('Spinning Plyo Squat Lunges', 'Fill in later');
 SELECT insert_into_exercise ('Big Brother Burpees', 'Fill in later');
@@ -154,12 +156,14 @@ SELECT insert_into_exercise ('W Pull-ups', 'Fill in later');
 SELECT insert_into_exercise ('Push-up Bird Dog Crunch', 'Fill in later');
 --Complex Lower
 SELECT insert_into_exercise ('Weighted Pistol', 'Fill in later');
-SELECT insert_into_exercise ('Bounding Split Squat', 'Fill in later');
+SELECT insert_into_exercise ('Lunge Thrust Press', 'Fill in later');
 SELECT insert_into_exercise ('Speed Skater', 'Fill in later');
 SELECT insert_into_exercise ('DS Double L', 'Fill in later');
 SELECT insert_into_exercise ('The Stabilizer', 'Fill in later');
 --X3 Ab Ripper
 SELECT insert_into_exercise ('X3 Ab Ripper routine', 'Fill in later');
+
+SELECT insert_into_exercise ('Rest', 'Fill in later');
 
 SELECT * FROM exercise;
 

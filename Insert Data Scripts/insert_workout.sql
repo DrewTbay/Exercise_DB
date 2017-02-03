@@ -1,4 +1,6 @@
-﻿SELECT insert_into_workout ('Total Synergistics');
+﻿TRUNCATE workout CASCADE;
+
+SELECT insert_into_workout ('Total Synergistics');
 SELECT insert_into_workout ('Agility X');
 SELECT insert_into_workout ('The Challenge');
 SELECT insert_into_workout ('X3 Yoga');
@@ -18,5 +20,6 @@ SELECT insert_into_workout ('Cold Start');
 SELECT insert_into_workout ('Complex Upper');
 SELECT insert_into_workout ('Complex Lower');
 SELECT insert_into_workout ('X3 Ab Ripper');
+SELECT insert_into_workout ('Rest');
 
 SELECT * FROM workout

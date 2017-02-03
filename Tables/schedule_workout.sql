@@ -21,6 +21,7 @@ CREATE TABLE public.schedule_workout
   workout_id bigint NOT NULL,
   schedule_id bigint,
   day_order integer,
+  week_order integer NOT NULL DEFAULT 1,
   CONSTRAINT schedule_workout_pkey PRIMARY KEY (schedule_workout_id),
   CONSTRAINT schedule_fkey FOREIGN KEY (schedule_id)
       REFERENCES public.schedule (schedule_id) MATCH SIMPLE
@@ -52,4 +53,5 @@ CREATE INDEX fki_workout_fkey2
   ON public.schedule_workout
   USING btree
   (workout_id);
+
 

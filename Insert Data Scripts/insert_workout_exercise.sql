@@ -22,9 +22,9 @@ SELECT insert_into_workout_exercise('Total Synergistics','Warrior Squat Moon', 1
 SELECT insert_into_workout_exercise ('Agility X','Agility X routine', 1, false, false);
 
 --The Challenge
-SELECT insert_into_workout_exercise ('The Challenge', 'Wide Pull-ups', 1, false, true);
+SELECT insert_into_workout_exercise ('The Challenge', 'Standard Pull-ups', 1, false, true);
 SELECT insert_into_workout_exercise ('The Challenge', 'Standard Push-ups', 2, false, true);
-SELECT insert_into_workout_exercise ('The Challenge', 'Wide Pull-ups', 3, false, true);
+SELECT insert_into_workout_exercise ('The Challenge', 'Standard Pull-ups', 3, false, true);
 SELECT insert_into_workout_exercise ('The Challenge', 'Standard Push-ups', 4, false, true);
 SELECT insert_into_workout_exercise ('The Challenge', 'Chin-up', 5, false, true);
 SELECT insert_into_workout_exercise ('The Challenge', 'Miltary Push-ups', 6, false, true);
@@ -44,11 +44,11 @@ SELECT insert_into_workout_exercise ('X3 Yoga', 'X3 Yoga routine', 1, false, fal
 
 --CVX
 SELECT insert_into_workout_exercise ('CVX', 'Press Jacks', 1, true, true);
-SELECT insert_into_workout_exercise ('CVX','Atlas Twist', 2, true, true);
-SELECT insert_into_workout_exercise ('CVX','March and Reach', 3, true, true);
+SELECT insert_into_workout_exercise ('CVX', 'Atlas Twist', 2, true, true);
+SELECT insert_into_workout_exercise ('CVX', 'March and Reach', 3, true, true);
 SELECT insert_into_workout_exercise ('CVX', 'Press Jacks', 4, true, true);
-SELECT insert_into_workout_exercise ('CVX','Atlas Twist', 5, true, true);
-SELECT insert_into_workout_exercise ('CVX','March and Reach', 6, true, true);
+SELECT insert_into_workout_exercise ('CVX', 'Atlas Twist', 5, true, true);
+SELECT insert_into_workout_exercise ('CVX', 'March and Reach', 6, true, true);
 
 SELECT insert_into_workout_exercise ('CVX','Traveling Tire Twist', 7, true, true);
 SELECT insert_into_workout_exercise ('CVX','Frog Squat Reach', 8, true, true);
@@ -97,6 +97,139 @@ SELECT insert_into_workout_exercise ('Dynamix','Dynamix routine', 1, false, fals
 SELECT insert_into_workout_exercise ('Accelerator','Accelerator routine', 1, false, false);
 --Pilates X
 SELECT insert_into_workout_exercise ('Pilates X', 'Pilates routine', 1, false, false);
+
+--Incinerator
+SELECT insert_into_workout_exercise ('Incinerator', 'Renegade Row', 1, true, true);
+SELECT insert_into_workout_exercise ('Incinerator', 'Standard Pull-ups', 2, false, true);
+SELECT insert_into_workout_exercise ('Incinerator', 'Floor Flys', 3, true, true);
+SELECT insert_into_workout_exercise ('Incinerator', 'Standard Push-ups', 4, false, true);
+SELECT insert_into_workout_exercise ('Incinerator', 'Rocket Launcher Row', 5, true, true);
+SELECT insert_into_workout_exercise ('Incinerator', 'Chin-ups', 6, false, true);
+SELECT insert_into_workout_exercise ('Incinerator', '"A" Press', 7, true, true);
+SELECT insert_into_workout_exercise ('Incinerator', 'Miltary Push-ups', 8, false, true);
+SELECT insert_into_workout_exercise ('Incinerator', 'Monkey Pump', 9, true, true);
+SELECT insert_into_workout_exercise ('Incinerator', 'Pike Press', 10, false, true);
+SELECT insert_into_workout_exercise ('Incinerator', 'Pterodactyl Flys', 11, true, true);
+SELECT insert_into_workout_exercise ('Incinerator', 'Flipper', 12, false, true);
+SELECT insert_into_workout_exercise ('Incinerator', 'Popeye Hammer Curls', 13, true, true);
+SELECT insert_into_workout_exercise ('Incinerator', 'Kneeler Curls', 14, true, true);
+SELECT insert_into_workout_exercise ('Incinerator', 'Hail to The Chief', 15, true, true);
+SELECT insert_into_workout_exercise ('Incinerator', 'Skyfers', 16, false, true);
+SELECT insert_into_workout_exercise ('Incinerator', 'Arm and Hammer', 17, true, true);
+SELECT insert_into_workout_exercise ('Incinerator', 'Rocket Launcher Kickbacks', 18, true, true);
+--Triometrics
+SELECT insert_into_workout_exercise ('Triometrics','Triometrics routine', 1, false, false);
+--MMX
+SELECT insert_into_workout_exercise ('MMX', 'MMX routine', 1, false, false);
+
+--Eccentric Upper
+SELECT insert_into_workout_exercise ('Eccentric Upper', 'Standard Push-ups', 1, false, true);
+SELECT insert_into_workout_exercise ('Eccentric Upper', 'Standard Pull-ups', 2, false, true);
+SELECT insert_into_workout_exercise ('Eccentric Upper', 'Military Press', 3, true, true);
+SELECT insert_into_workout_exercise ('Eccentric Upper', 'Military Push-ups', 4, false, true);
+SELECT insert_into_workout_exercise ('Eccentric Upper', 'Chin-ups', 5, false, true);
+SELECT insert_into_workout_exercise ('Eccentric Upper', 'Deep Swimmer''s Press', 6, true, true);
+SELECT insert_into_workout_exercise ('Eccentric Upper', 'Fly Push-ups', 7, false, true);
+SELECT insert_into_workout_exercise ('Eccentric Upper', 'V Pull-ups', 8, false, true);
+SELECT insert_into_workout_exercise ('Eccentric Upper', 'Upright Hammer Pull', 9, true, true);
+SELECT insert_into_workout_exercise ('Eccentric Upper', 'Staggered Push-ups', 10, false, true);
+SELECT insert_into_workout_exercise ('Eccentric Upper', 'Rocket Launcher Row', 11, true, true);
+SELECT insert_into_workout_exercise ('Eccentric Upper', 'Later/Anterior Raise', 12, true, true);
+SELECT insert_into_workout_exercise ('Eccentric Upper', 'Plyo Push-ups', 13, false, true);
+SELECT insert_into_workout_exercise ('Eccentric Upper', 'Vaulter Pull-ups', 14, false, true);
+SELECT insert_into_workout_exercise ('Eccentric Upper', 'Pterodactyl Flys', 15, true, true);
+SELECT insert_into_workout_exercise ('Eccentric Upper', 'Rocket Launcher Kickback', 16, true, true);
+SELECT insert_into_workout_exercise ('Eccentric Upper', 'Flip Flop Combo', 17, true, true);
+SELECT insert_into_workout_exercise ('Eccentric Upper', 'Skyfers', 18, false, true);
+SELECT insert_into_workout_exercise ('Eccentric Upper', 'Kneeler Curl', 19, true, true);
+
+--Eccentric Lower
+SELECT insert_into_workout_exercise ('Eccentric Lower', 'Squats', 1, true, true);
+SELECT insert_into_workout_exercise ('Eccentric Lower', 'Lunge', 2, true, true);
+SELECT insert_into_workout_exercise ('Eccentric Lower', 'Sumo', 3, true, true);
+SELECT insert_into_workout_exercise ('Eccentric Lower', 'Weighted Pistol', 4, true, true);
+SELECT insert_into_workout_exercise ('Eccentric Lower', 'Side Kicks', 5, false, true);
+SELECT insert_into_workout_exercise ('Eccentric Lower', 'Front Kicks', 6, true, true);
+SELECT insert_into_workout_exercise ('Eccentric Lower', 'Albanian Squat', 7, true, true);
+SELECT insert_into_workout_exercise ('Eccentric Lower', 'Adductor Lunge', 8, true, true);
+SELECT insert_into_workout_exercise ('Eccentric Lower', 'Cross Reach', 9, true, true);
+SELECT insert_into_workout_exercise ('Eccentric Lower', 'TT Plus', 10, false, true);
+SELECT insert_into_workout_exercise ('Eccentric Lower', 'Bridge Kicks', 11, true, true);
+SELECT insert_into_workout_exercise ('Eccentric Lower', 'Hip Flexor Splits', 12, false, true);
+SELECT insert_into_workout_exercise ('Eccentric Lower', 'Calf Dog', 13, false, true);
+--Decelerator
+SELECT insert_into_workout_exercise ('Decelerator', 'Bounding Squats', 1, false, true);
+SELECT insert_into_workout_exercise ('Decelerator', 'Crane Cracker Push-ups', 2, false, true);
+SELECT insert_into_workout_exercise ('Decelerator', 'Good God Squats', 3, false, true);
+SELECT insert_into_workout_exercise ('Decelerator', 'Elevator Pull-ups', 4, false, true);
+SELECT insert_into_workout_exercise ('Decelerator', '2-Pop Hop', 5, false, true);
+SELECT insert_into_workout_exercise ('Decelerator', 'Crawly Plyo Push-ups', 6, false, true);
+SELECT insert_into_workout_exercise ('Decelerator', 'Holmsen Screamer Hold', 7, false, true);
+SELECT insert_into_workout_exercise ('Decelerator', 'Chin Pulls', 8, false, true);
+SELECT insert_into_workout_exercise ('Decelerator', 'Joel Jump', 9, false, true);
+SELECT insert_into_workout_exercise ('Decelerator', 'Starfish Push-ups', 10, false, true);
+SELECT insert_into_workout_exercise ('Decelerator', 'Duper 2', 11, false, true);
+SELECT insert_into_workout_exercise ('Decelerator', 'Vaulter Pull-ups', 12, false, true);
+SELECT insert_into_workout_exercise ('Decelerator', 'Elevator Tiptoe Squats', 13, true, true);
+SELECT insert_into_workout_exercise ('Decelerator', 'Superman/Bow', 14, false, true);
+SELECT insert_into_workout_exercise ('Decelerator', 'Spinning Plyo Squat Lunges', 15, false, true);
+SELECT insert_into_workout_exercise ('Decelerator', 'Big Brother Burpees', 16, false, true);
+--Cold Start
+SELECT insert_into_workout_exercise ('Cold Start', 'Cold Start routine', 1, false, true);
+--Complex Upper
+--Set One
+SELECT insert_into_workout_exercise ('Complex Upper', 'Slow-mo Chin-ups', 1, false, true);
+SELECT insert_into_workout_exercise ('Complex Upper', 'Plyo Push-ups', 2, false, true);
+SELECT insert_into_workout_exercise ('Complex Upper', 'Lunge Thrust Press', 3, true, true);
+SELECT insert_into_workout_exercise ('Complex Upper', 'W Pull-ups', 4, false, true);
+SELECT insert_into_workout_exercise ('Complex Upper', 'Push-up Bird Dog Crunch', 5, false, true);
+--Set Two
+SELECT insert_into_workout_exercise ('Complex Upper', 'Slow-mo Chin-ups', 6, false, true);
+SELECT insert_into_workout_exercise ('Complex Upper', 'Plyo Push-ups', 7, false, true);
+SELECT insert_into_workout_exercise ('Complex Upper', 'Lunge Thrust Press', 8, true, true);
+SELECT insert_into_workout_exercise ('Complex Upper', 'W Pull-ups', 9, false, true);
+SELECT insert_into_workout_exercise ('Complex Upper', 'Push-up Bird Dog Crunch', 10, false, true);
+--Set Three
+SELECT insert_into_workout_exercise ('Complex Upper', 'Slow-mo Chin-ups', 11, false, true);
+SELECT insert_into_workout_exercise ('Complex Upper', 'Plyo Push-ups', 12, false, true);
+SELECT insert_into_workout_exercise ('Complex Upper', 'Lunge Thrust Press', 13, true, true);
+SELECT insert_into_workout_exercise ('Complex Upper', 'W Pull-ups', 14, false, true);
+SELECT insert_into_workout_exercise ('Complex Upper', 'Push-up Bird Dog Crunch', 15, false, true);
+--Set Four
+SELECT insert_into_workout_exercise ('Complex Upper', 'Slow-mo Chin-ups', 16, false, true);
+SELECT insert_into_workout_exercise ('Complex Upper', 'Plyo Push-ups', 17, false, true);
+SELECT insert_into_workout_exercise ('Complex Upper', 'Lunge Thrust Press', 18, true, true);
+SELECT insert_into_workout_exercise ('Complex Upper', 'W Pull-ups', 19, false, true);
+SELECT insert_into_workout_exercise ('Complex Upper', 'Push-up Bird Dog Crunch', 20, false, true);
+
+--Complex Lower
+--Set One
+SELECT insert_into_workout_exercise ('Complex Lower', 'Weighted Pistol', 1, true, true);
+SELECT insert_into_workout_exercise ('Complex Lower', 'Lunge Thrust Press', 2, true, true);
+SELECT insert_into_workout_exercise ('Complex Lower', 'Speed Skater', 3, false, true);
+SELECT insert_into_workout_exercise ('Complex Lower', 'DS Double L', 4, true, true);
+SELECT insert_into_workout_exercise ('Complex Lower', 'The Stabilizer', 5, false, true);
+--Set Two
+SELECT insert_into_workout_exercise ('Complex Lower', 'Weighted Pistol', 6, true, true);
+SELECT insert_into_workout_exercise ('Complex Lower', 'Lunge Thrust Press', 7, true, true);
+SELECT insert_into_workout_exercise ('Complex Lower', 'Speed Skater', 8, false, true);
+SELECT insert_into_workout_exercise ('Complex Lower', 'DS Double L', 9, true, true);
+SELECT insert_into_workout_exercise ('Complex Lower', 'The Stabilizer', 10, false, true);
+--Set Three
+SELECT insert_into_workout_exercise ('Complex Lower', 'Weighted Pistol', 11, true, true);
+SELECT insert_into_workout_exercise ('Complex Lower', 'Lunge Thrust Press', 12, true, true);
+SELECT insert_into_workout_exercise ('Complex Lower', 'Speed Skater', 13, false, true);
+SELECT insert_into_workout_exercise ('Complex Lower', 'DS Double L', 14, true, true);
+SELECT insert_into_workout_exercise ('Complex Lower', 'The Stabilizer', 15, false, true);
+--Set Four
+SELECT insert_into_workout_exercise ('Complex Lower', 'Weighted Pistol', 16, true, true);
+SELECT insert_into_workout_exercise ('Complex Lower', 'Lunge Thrust Press', 17, true, true);
+SELECT insert_into_workout_exercise ('Complex Lower', 'Speed Skater', 18, false, true);
+SELECT insert_into_workout_exercise ('Complex Lower', 'DS Double L', 19, true, true);
+SELECT insert_into_workout_exercise ('Complex Lower', 'The Stabilizer', 20, false, true);
+
+--X3 Ab Ripper
+SELECT insert_into_workout_exercise ('X3 Ab Ripper', 'X3 Ab Ripper routine', 1, false, false);
 
 SELECT * FROM workout_exercise;
 
