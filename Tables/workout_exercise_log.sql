@@ -28,7 +28,7 @@ CREATE TABLE public.workout_exercise_log
   CONSTRAINT wel_pkey PRIMARY KEY (wel_id),
   CONSTRAINT workout_exercise_fkey FOREIGN KEY (workout_exercise_id)
       REFERENCES public.workout_exercise (workout_exercise_id) MATCH SIMPLE
-      ON UPDATE NO ACTION ON DELETE NO ACTION
+      ON UPDATE CASCADE ON DELETE CASCADE
 )
 WITH (
   OIDS=FALSE

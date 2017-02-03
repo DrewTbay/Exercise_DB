@@ -25,10 +25,10 @@ CREATE TABLE public.schedule_workout
   CONSTRAINT schedule_workout_pkey PRIMARY KEY (schedule_workout_id),
   CONSTRAINT schedule_fkey FOREIGN KEY (schedule_id)
       REFERENCES public.schedule (schedule_id) MATCH SIMPLE
-      ON UPDATE NO ACTION ON DELETE NO ACTION,
+      ON UPDATE CASCADE ON DELETE CASCADE,
   CONSTRAINT workout_fkey FOREIGN KEY (workout_id)
       REFERENCES public.workout (workout_id) MATCH SIMPLE
-      ON UPDATE NO ACTION ON DELETE NO ACTION
+      ON UPDATE CASCADE ON DELETE CASCADE
 )
 WITH (
   OIDS=FALSE
