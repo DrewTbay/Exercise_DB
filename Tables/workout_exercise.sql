@@ -14,9 +14,9 @@ ALTER TABLE public.workout_exercise_id_seq
 
 CREATE TABLE public.workout_exercise
 (
-  workout_exercise_id bigint NOT NULL DEFAULT nextval('workout_exercise_id_seq'::regclass),
-  workout_id bigint,
-  exercise_id bigint NOT NULL,
+  workout_exercise_id integer NOT NULL DEFAULT nextval('workout_exercise_id_seq'::regclass),
+  workout_id integer NOT NULL,
+  exercise_id integer NOT NULL,
   set_order integer NOT NULL DEFAULT 1,
   record_weight boolean NOT NULL DEFAULT false,
   record_repetition boolean NOT NULL DEFAULT false,
@@ -43,12 +43,14 @@ CREATE INDEX fki_exercise_fkey
   USING btree
   (exercise_id);
 
--- Index: public.fki_workout_fkey
+-- Index: public.fki_we_workout_fkey
 
--- DROP INDEX public.fki_workout_fkey;
+-- DROP INDEX public.fki_we_workout_fkey;
 
-CREATE INDEX fki_workout_fkey
+CREATE INDEX fki_we_workout_fkey
   ON public.workout_exercise
   USING btree
   (workout_id);
+
+t_id);
 

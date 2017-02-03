@@ -17,10 +17,10 @@ ALTER TABLE public.schedule_workout_id_seq
 
 CREATE TABLE public.schedule_workout
 (
-  schedule_workout_id bigint NOT NULL DEFAULT nextval('schedule_workout_id_seq'::regclass),
-  workout_id bigint NOT NULL,
-  schedule_id bigint,
-  day_order integer,
+  schedule_workout_id integer NOT NULL DEFAULT nextval('schedule_workout_id_seq'::regclass),
+  workout_id integer NOT NULL,
+  schedule_id integer NOT NULL,
+  day_order integer NOT NULL DEFAULT 1,
   week_order integer NOT NULL DEFAULT 1,
   CONSTRAINT schedule_workout_pkey PRIMARY KEY (schedule_workout_id),
   CONSTRAINT schedule_fkey FOREIGN KEY (schedule_id)
@@ -45,11 +45,11 @@ CREATE INDEX fki_schedule_fkey
   USING btree
   (schedule_id);
 
--- Index: public.fki_workout_fkey2
+-- Index: public.fki_sw_workout_fkey
 
--- DROP INDEX public.fki_workout_fkey2;
+-- DROP INDEX public.fki_sw_workout_fkey;
 
-CREATE INDEX fki_workout_fkey2
+CREATE INDEX fki_sw_workout_fkey
   ON public.schedule_workout
   USING btree
   (workout_id);

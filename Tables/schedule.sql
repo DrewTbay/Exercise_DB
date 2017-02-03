@@ -17,8 +17,8 @@ ALTER TABLE public.schedule_id_seq
 
 CREATE TABLE public.schedule
 (
-  schedule_id bigint NOT NULL DEFAULT nextval('schedule_id_seq'::regclass),
-  name text,
+  schedule_id integer NOT NULL DEFAULT nextval('schedule_id_seq'::regclass),
+  name text NOT NULL,
   CONSTRAINT schedule_pkey PRIMARY KEY (schedule_id)
 )
 WITH (
@@ -26,3 +26,4 @@ WITH (
 );
 ALTER TABLE public.schedule
   OWNER TO postgres;
+

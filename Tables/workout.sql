@@ -17,7 +17,7 @@ ALTER TABLE public.workout_id_seq
 
 CREATE TABLE public.workout
 (
-  workout_id bigint NOT NULL DEFAULT nextval('workout_id_seq'::regclass),
+  workout_id integer NOT NULL DEFAULT nextval('workout_id_seq'::regclass),
   name text NOT NULL,
   CONSTRAINT workout_pkey PRIMARY KEY (workout_id)
 )
@@ -26,5 +26,4 @@ WITH (
 );
 ALTER TABLE public.workout
   OWNER TO postgres;
-
 
