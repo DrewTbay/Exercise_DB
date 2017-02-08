@@ -20,7 +20,7 @@ CREATE TABLE public.users
 (
   user_id integer NOT NULL DEFAULT nextval('user_id_seq'::regclass),
   user_name text NOT NULL,
-  password text NOT NULL,
+  user_password text NOT NULL,
   salt text NOT NULL,
   CONSTRAINT users_pkey PRIMARY KEY (user_id)
 )
@@ -29,3 +29,4 @@ WITH (
 );
 ALTER TABLE public.users
   OWNER TO postgres;
+
