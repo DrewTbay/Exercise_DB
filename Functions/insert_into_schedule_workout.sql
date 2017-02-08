@@ -3,8 +3,8 @@
 -- DROP FUNCTION public.insert_into_schedule_workout(text, text, integer);
 
 CREATE OR REPLACE FUNCTION public.insert_into_schedule_workout(
-    _schedulename text,
-    _workoutname text,
+    _schedule_name text,
+    _workout_name text,
     _dayorder integer)
   RETURNS void AS
 $BODY$INSERT INTO public.schedule_workout(
@@ -15,10 +15,10 @@ $BODY$INSERT INTO public.schedule_workout(
 VALUES (
 	(SELECT schedule_id 
 	FROM schedule 
-	WHERE name = _scheduleName),
+	WHERE schedule_name = _schedule_name),
 	(SELECT workout_id 
 	FROM workout 
-	WHERE name = _workoutName),
+	WHERE workout_name = _workout_name),
 	_dayOrder
 );
 $BODY$

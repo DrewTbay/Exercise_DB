@@ -1,31 +1,31 @@
-﻿-- Function: public.insert_into_exercise(text, text)
+﻿-- Function: public.insert_into_schedule_workout(text, text, integer)
 
-DROP FUNCTION public.insert_into_exercise(text, text);
+-- DROP FUNCTION public.insert_into_schedule_workout(text, text, integer);
 
-CREATE OR REPLACE FUNCTION public.insert_into_exercise(
-    _exercise_name text,
-    _exercise_description text)
+CREATE OR REPLACE FUNCTION public.insert_into_schedule_workout(
+    _schedule_name text,
+    _workout_name text,
+    _day_order integer,
+    _week_order integer)
   RETURNS void AS
+$BODY$INSERT INTO public.schedule_workout(
+	schedule_id, 
+	workout_id, 
+	day_order,
+	week_order
+)
+VALUES (
+	(SELECT schedule_id 
+	FROM schedule 
+	WHERE schedule_name = _schedule_name),
+	(SELECT workout_id 
+	FROM workout 
+	WHERE workout_name = _workout_name),
+	_day_order,
+	_week_order
+);
 $BODY$
-BEGIN
-	IF NOT EXISTS(
-		SELECT exercise_id 
-		FROM public.exercise 
-		WHERE exercise_name = _exercise_name
-	) THEN
-		INSERT INTO public.exercise 
-			(exercise_name, 
-			exercise_description) 
-		VALUES (_exercise_name, 
-			_exercise_description);
-	ELSE
-		UPDATE public.exercise 
-		SET exercise_description = _exercise_description 
-		WHERE exercise_name = _exercise_name;
-	END IF;
-END;
-$BODY$
-  LANGUAGE plpgsql VOLATILE
+  LANGUAGE sql VOLATILE
   COST 100;
-ALTER FUNCTION public.insert_into_exercise(text, text)
+ALTER FUNCTION public.insert_into_schedule_workout(text, text, integer)
   OWNER TO postgres;
