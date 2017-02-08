@@ -2,14 +2,15 @@
 
 -- DROP FUNCTION public.insert_into_schedule(text);
 
-CREATE OR REPLACE FUNCTION public.insert_into_schedule(_schedulename text)
+CREATE OR REPLACE FUNCTION public.insert_into_schedule(_schedule_name text)
   RETURNS void AS
-$BODY$INSERT INTO public.schedule(name)
-SELECT _scheduleName
+$BODY$
+INSERT INTO public.schedule(schedule_name)
+SELECT _schedule_name
 WHERE NOT EXISTS (
 	SELECT schedule_id
 	FROM public.schedule
-	WHERE name = _scheduleName
+	WHERE schedule_name = _schedule_name
 );$BODY$
   LANGUAGE sql VOLATILE
   COST 100;

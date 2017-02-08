@@ -18,8 +18,8 @@ ALTER TABLE public.exercise_id_seq
 CREATE TABLE public.exercise
 (
   exercise_id integer NOT NULL DEFAULT nextval('exercise_id_seq'::regclass),
-  name text NOT NULL,
-  description text NOT NULL,
+  exercise_name text NOT NULL,
+  exercise_description text NOT NULL,
   CONSTRAINT exercise_pkey PRIMARY KEY (exercise_id)
 )
 WITH (

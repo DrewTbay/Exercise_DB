@@ -22,7 +22,6 @@ CREATE TABLE public.users
   user_name text NOT NULL,
   password text NOT NULL,
   salt text NOT NULL,
-  last_ip text NOT NULL DEFAULT '192.0.0.1'::text,
   CONSTRAINT users_pkey PRIMARY KEY (user_id)
 )
 WITH (
