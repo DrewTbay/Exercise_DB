@@ -18,13 +18,14 @@ BEGIN
 		schedule_id,
 		user_id,
 		current_week,
-		current_day)
+		current_day,
+        current_period)
 	VALUES (
 		v_schedule_id,
 		NEW.user_id,
 		1,
-		1
-	);
+		1,
+        1);
     END LOOP;
 END
 $BODY$
@@ -35,5 +36,5 @@ ALTER FUNCTION public.trig_user_create()
 
 -- DROP TRIGGER create_schedule_logs ON public.users;
 
-CREATE TRIGGER create_schedule_logs AFTER INSERT ON users
+CREATE TRIGGER create_current_schedules AFTER INSERT ON users
     FOR EACH ROW EXECUTE PROCEDURE trig_user_create();

@@ -1,13 +1,14 @@
-﻿-- Table: public.schedule_log
+﻿-- Table: public.current_schedule
 
--- DROP TABLE public.schedule_log;
+-- DROP TABLE public.current_schedule;
 
-CREATE TABLE public.schedule_log
+CREATE TABLE public.current_schedule
 (
   user_id integer NOT NULL,
   current_week integer NOT NULL DEFAULT 1,
   current_day integer NOT NULL DEFAULT 1,
   schedule_id integer NOT NULL,
+  current_period integer NOT NULL DEFAULT 1,
   CONSTRAINT schedule_log_pkey PRIMARY KEY (user_id, schedule_id),
   CONSTRAINT schedule_fkey FOREIGN KEY (schedule_id)
       REFERENCES public.schedule (schedule_id) MATCH SIMPLE
@@ -19,7 +20,7 @@ CREATE TABLE public.schedule_log
 WITH (
   OIDS=FALSE
 );
-ALTER TABLE public.schedule_log
+ALTER TABLE public.current_schedule
   OWNER TO postgres;
 
 -- Index: public.fki_sl_schedule_fkey
@@ -27,7 +28,7 @@ ALTER TABLE public.schedule_log
 -- DROP INDEX public.fki_sl_schedule_fkey;
 
 CREATE INDEX fki_sl_schedule_fkey
-  ON public.schedule_log
+  ON public.current_schedule
   USING btree
   (schedule_id);
 
@@ -36,7 +37,7 @@ CREATE INDEX fki_sl_schedule_fkey
 -- DROP INDEX public.fki_sl_users_fkey;
 
 CREATE INDEX fki_sl_users_fkey
-  ON public.schedule_log
+  ON public.current_schedule
   USING btree
   (user_id);
 

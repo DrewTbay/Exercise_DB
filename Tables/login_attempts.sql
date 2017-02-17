@@ -18,10 +18,11 @@ ALTER TABLE public.login_attempt_id_seq
 CREATE TABLE public.login_attempts
 (
   login_attempt_id integer NOT NULL DEFAULT nextval('login_attempt_id_seq'::regclass),
-  attempt_date timestamp with time zone NOT NULL DEFAULT now(),
+  attempt_date timestamp with time zone NOT NULL,
   successful_attempt boolean NOT NULL DEFAULT false,
   token text,
   user_id integer NOT NULL,
+  last_time_active timestamp with time zone,
   CONSTRAINT login_attempt_id PRIMARY KEY (login_attempt_id),
   CONSTRAINT user_fkey FOREIGN KEY (user_id)
       REFERENCES public.users (user_id) MATCH SIMPLE
@@ -41,4 +42,3 @@ CREATE INDEX fki_user_fkey
   ON public.login_attempts
   USING btree
   (user_id);
-
