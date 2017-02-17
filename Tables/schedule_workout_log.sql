@@ -27,8 +27,7 @@ CREATE TABLE public.schedule_workout_log
       ON UPDATE CASCADE ON DELETE CASCADE,
   CONSTRAINT users_fkey FOREIGN KEY (user_id)
       REFERENCES public.users (user_id) MATCH SIMPLE
-      ON UPDATE CASCADE ON DELETE CASCADE,
-  CONSTRAINT appear_in_one_period UNIQUE (schedule_workout_id, period)
+      ON UPDATE CASCADE ON DELETE CASCADE
 )
 WITH (
   OIDS=FALSE
