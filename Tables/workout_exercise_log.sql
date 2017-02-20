@@ -25,7 +25,7 @@ CREATE TABLE public.workout_exercise_log
   repetition smallint,
   difficulty smallint,
   completed_on date,
-  comment text,
+  note text,
   CONSTRAINT wel_pkey PRIMARY KEY (wel_id),
   CONSTRAINT swl_fkey FOREIGN KEY (swl_id)
       REFERENCES public.schedule_workout_log (swl_id) MATCH SIMPLE

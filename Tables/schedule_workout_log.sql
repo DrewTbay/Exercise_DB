@@ -20,7 +20,7 @@ CREATE TABLE public.schedule_workout_log
   swl_id integer NOT NULL DEFAULT nextval('swl_id_seq'::regclass),
   schedule_workout_id integer NOT NULL,
   period integer NOT NULL,
-  user_id integer,
+  user_id integer NOT NULL,
   CONSTRAINT swl_pkey PRIMARY KEY (swl_id),
   CONSTRAINT schedule_workout_fkey FOREIGN KEY (schedule_workout_id)
       REFERENCES public.schedule_workout (schedule_workout_id) MATCH SIMPLE
