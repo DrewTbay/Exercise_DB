@@ -22,6 +22,7 @@ CREATE TABLE public.users
   user_name text NOT NULL,
   user_password text NOT NULL,
   salt text NOT NULL,
+  user_email text NOT NULL,
   CONSTRAINT users_pkey PRIMARY KEY (user_id)
 )
 WITH (
