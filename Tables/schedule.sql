@@ -1,4 +1,6 @@
-﻿-- Sequence: schedule_id_seq
+﻿\c exercise_db;
+
+-- Sequence: schedule_id_seq
 
 DROP SEQUENCE IF EXISTS schedule_id_seq;
 
