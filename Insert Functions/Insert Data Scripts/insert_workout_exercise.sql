@@ -1,6 +1,4 @@
-﻿TRUNCATE workout_exercise CASCADE;
-
---Total Synergistics
+﻿--Total Synergistics
 SELECT insert_into_workout_exercise('Total Synergistics','Push-up/Side Arm Balance',1,false,true);
 SELECT insert_into_workout_exercise('Total Synergistics','Crescent Chair', 2,false,true);
 SELECT insert_into_workout_exercise('Total Synergistics','Pull Knee Pull', 3,false,true);
@@ -230,7 +228,5 @@ SELECT insert_into_workout_exercise ('Complex Lower', 'The Stabilizer', 20, fals
 
 --X3 Ab Ripper
 SELECT insert_into_workout_exercise ('X3 Ab Ripper', 'X3 Ab Ripper routine', 1, false, false);
-
-SELECT * FROM workout_exercise;
 
 --TRUNCATE workout_exercise;

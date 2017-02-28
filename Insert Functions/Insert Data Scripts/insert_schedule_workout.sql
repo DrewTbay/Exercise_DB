@@ -1,6 +1,4 @@
-﻿TRUNCATE schedule_workout CASCADE;
-
---Classic
+﻿--Classic
 --Classic, Block 1, Week 1
 SELECT insert_into_schedule_workout('Classic','Total Synergistics',1,1);
 SELECT insert_into_schedule_workout('Classic','Agility X',2,1);
@@ -515,7 +513,5 @@ SELECT insert_into_schedule_workout('Elite','Pilates X',4,4);
 SELECT insert_into_schedule_workout('Elite','Isometrix',5,4);
 SELECT insert_into_schedule_workout('Elite','X3 Yoga',6,4);
 SELECT insert_into_schedule_workout('Elite','Dynamix',7,4);
-
-SELECT * FROM schedule_workout;
 
 --TRUNCATE schedule_workout;

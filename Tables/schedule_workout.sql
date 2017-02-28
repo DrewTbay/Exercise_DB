@@ -1,19 +1,16 @@
-﻿-- Sequence: public.schedule_workout_id_seq
+﻿-- Sequence: schedule_workout_id_seq
 
--- DROP SEQUENCE public.schedule_workout_id_seq;
+DROP SEQUENCE IF EXISTS schedule_workout_id_seq;
 
-CREATE SEQUENCE public.schedule_workout_id_seq
+CREATE SEQUENCE schedule_workout_id_seq
   INCREMENT 1
   MINVALUE 1
   MAXVALUE 9223372036854775807
-  START 1
-  CACHE 1;
-ALTER TABLE public.schedule_workout_id_seq
-  OWNER TO postgres;
+  START 1;
 
--- Table: public.schedule_workout
+-- Table: schedule_workout
 
--- DROP TABLE public.schedule_workout;
+DROP TABLE IF EXISTS schedule_workout;
 
 CREATE TABLE public.schedule_workout
 (
@@ -29,28 +26,23 @@ CREATE TABLE public.schedule_workout
   CONSTRAINT workout_fkey FOREIGN KEY (workout_id)
       REFERENCES public.workout (workout_id) MATCH SIMPLE
       ON UPDATE CASCADE ON DELETE CASCADE
-)
-WITH (
-  OIDS=FALSE
 );
-ALTER TABLE public.schedule_workout
-  OWNER TO postgres;
 
--- Index: public.fki_schedule_fkey
+-- Index: public.fki_sw_schedule_fkey
 
--- DROP INDEX public.fki_schedule_fkey;
+DROP INDEX IF EXISTS fki_sw_schedule_fkey;
 
-CREATE INDEX fki_schedule_fkey
-  ON public.schedule_workout
+CREATE INDEX fki_sw_schedule_fkey
+  ON schedule_workout
   USING btree
   (schedule_id);
 
--- Index: public.fki_sw_workout_fkey
+-- Index: fki_sw_workout_fkey
 
--- DROP INDEX public.fki_sw_workout_fkey;
+DROP INDEX IF EXISTS fki_sw_workout_fkey;
 
 CREATE INDEX fki_sw_workout_fkey
-  ON public.schedule_workout
+  ON schedule_workout
   USING btree
   (workout_id);
 

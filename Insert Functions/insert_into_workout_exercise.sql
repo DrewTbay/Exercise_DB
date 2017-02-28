@@ -1,8 +1,8 @@
-﻿-- Function: public.insert_into_workout_exercise(text, text, integer, boolean, boolean)
+﻿-- Function: insert_into_workout_exercise(text, text, integer, boolean, boolean)
 
--- DROP FUNCTION public.insert_into_workout_exercise(text, text, integer, boolean, boolean);
+DROP FUNCTION IF EXISTS insert_into_workout_exercise(text, text, integer, boolean, boolean);
 
-CREATE OR REPLACE FUNCTION public.insert_into_workout_exercise(
+CREATE OR REPLACE FUNCTION insert_into_workout_exercise(
     _workout_name text,
     _exercise_name text,
     _set_order integer,
@@ -10,7 +10,7 @@ CREATE OR REPLACE FUNCTION public.insert_into_workout_exercise(
     _record_rep boolean)
   RETURNS void AS
 $BODY$
-INSERT INTO public.workout_exercise(
+INSERT INTO workout_exercise(
 	workout_id, 
 	exercise_id, 
 	set_order,
@@ -31,5 +31,3 @@ VALUES (
 $BODY$
   LANGUAGE sql VOLATILE
   COST 100;
-ALTER FUNCTION public.insert_into_workout_exercise(text, text, integer, boolean, boolean)
-  OWNER TO postgres;
