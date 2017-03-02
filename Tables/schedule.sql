@@ -1,8 +1,9 @@
 ﻿\c exercise_db;
 
--- Sequence: schedule_id_seq
+DROP TABLE IF EXISTS schedules CASCADE;
+DROP SEQUENCE IF EXISTS schedule_id_seq CASCADE;
 
-DROP SEQUENCE IF EXISTS schedule_id_seq;
+-- Sequence: schedule_id_seq
 
 CREATE SEQUENCE public.schedule_id_seq
   INCREMENT 1
@@ -11,8 +12,6 @@ CREATE SEQUENCE public.schedule_id_seq
   START 1;
 
 -- Table: schedules
-
-DROP TABLE IF EXISTS schedule;
 
 CREATE TABLE schedules
 (

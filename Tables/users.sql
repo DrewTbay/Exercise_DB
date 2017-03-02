@@ -1,22 +1,19 @@
--- Sequence: public.user_id_seq
+\c exercise_db;
 
--- DROP SEQUENCE public.user_id_seq;
+DROP TABLE IF EXISTS users CASCADE;
+DROP SEQUENCE IF EXISTS user_id_seq CASCADE;
 
-CREATE SEQUENCE public.user_id_seq
+-- Sequence: user_id_seq
+
+CREATE SEQUENCE user_id_seq
   INCREMENT 1
   MINVALUE 1
   MAXVALUE 9223372036854775807
-  START 1
-  CACHE 1;
-ALTER TABLE public.user_id_seq
-  OWNER TO postgres;
+  START 1;
 
+-- Table: users
 
--- Table: public.users
-
--- DROP TABLE public.users;
-
-CREATE TABLE public.users
+CREATE TABLE users
 (
   user_id integer NOT NULL DEFAULT nextval('user_id_seq'::regclass),
   user_name text NOT NULL,
@@ -24,10 +21,5 @@ CREATE TABLE public.users
   salt text NOT NULL,
   user_email text NOT NULL,
   CONSTRAINT users_pkey PRIMARY KEY (user_id)
-)
-WITH (
-  OIDS=FALSE
 );
-ALTER TABLE public.users
-  OWNER TO postgres;
 

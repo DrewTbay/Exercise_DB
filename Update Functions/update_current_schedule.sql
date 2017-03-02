@@ -1,8 +1,10 @@
-﻿-- Function: public.update_schedule_log(text, text, integer, integer)
+﻿\c exercise_db;
 
--- DROP FUNCTION public.update_schedule_log(text, text, integer, integer);
+-- Function: update_schedule_log(text, text, integer, integer)
 
-CREATE OR REPLACE FUNCTION public.update_current_schedule(
+DROP FUNCTION IF EXISTS update_schedule_log(text, text, integer, integer);
+
+CREATE OR REPLACE FUNCTION update_current_schedule(
     _user_name text,
     _schedule_name text,
     _set_week integer,
@@ -16,7 +18,7 @@ $BODY$
       current_period = _set_period
    WHERE schedule_id = (
       SELECT schedule_id
-      FROM schedule
+      FROM schedules
       WHERE schedule_name = _schedule_name)
    AND user_id = (
       SELECT user_id
@@ -25,5 +27,3 @@ $BODY$
 $BODY$
   LANGUAGE sql VOLATILE
   COST 100;
-ALTER FUNCTION public.update_schedule_log(text, text, integer, integer)
-  OWNER TO postgres;

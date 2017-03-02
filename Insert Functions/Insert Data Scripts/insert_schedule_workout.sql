@@ -1,4 +1,5 @@
-﻿--Classic
+﻿\c exercise_db;
+--Classic
 --Classic, Block 1, Week 1
 SELECT insert_into_schedule_workout('Classic','Total Synergistics',1,1);
 SELECT insert_into_schedule_workout('Classic','Agility X',2,1);

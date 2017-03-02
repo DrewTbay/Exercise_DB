@@ -1,6 +1,12 @@
-﻿-- Function: insert_into_schedule_workout(text, text, integer, integer)
+﻿\c exercise_db;
 
-DROP FUNCTION IF EXISTS insert_into_schedule_workout(text, text, integer, integer);
+-- Function: insert_into_schedule_workout(text, text, integer, integer)
+
+DROP FUNCTION IF EXISTS insert_into_schedule_workout(
+    text,
+    text,
+    integer,
+    integer);
 
 CREATE OR REPLACE FUNCTION insert_into_schedule_workout(
     _schedule_name text,
@@ -16,10 +22,10 @@ $BODY$
         week_order
     ) VALUES (
         (SELECT schedule_id 
-        FROM schedule 
+        FROM schedules 
         WHERE schedule_name = _schedule_name),
         (SELECT workout_id 
-        FROM workout 
+        FROM workouts 
         WHERE workout_name = _workout_name),
         _day_order,
         _week_order
@@ -27,4 +33,5 @@ $BODY$
 $BODY$
   LANGUAGE sql VOLATILE
   COST 100;
-
+  
+GRANT EXECUTE ON insert_into_schedule_workout TO exercise_conn;

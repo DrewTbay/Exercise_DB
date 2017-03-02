@@ -1,4 +1,5 @@
-﻿--Total Synergistics
+﻿\c exercise_db;
+--Total Synergistics
 SELECT insert_into_workout_exercise('Total Synergistics','Push-up/Side Arm Balance',1,false,true);
 SELECT insert_into_workout_exercise('Total Synergistics','Crescent Chair', 2,false,true);
 SELECT insert_into_workout_exercise('Total Synergistics','Pull Knee Pull', 3,false,true);
@@ -25,9 +26,9 @@ SELECT insert_into_workout_exercise ('The Challenge', 'Standard Push-ups', 2, fa
 SELECT insert_into_workout_exercise ('The Challenge', 'Standard Pull-ups', 3, false, true);
 SELECT insert_into_workout_exercise ('The Challenge', 'Standard Push-ups', 4, false, true);
 SELECT insert_into_workout_exercise ('The Challenge', 'Chin-up', 5, false, true);
-SELECT insert_into_workout_exercise ('The Challenge', 'Miltary Push-ups', 6, false, true);
+SELECT insert_into_workout_exercise ('The Challenge', 'Military Push-ups', 6, false, true);
 SELECT insert_into_workout_exercise ('The Challenge', 'Chin-up', 7, false, true);
-SELECT insert_into_workout_exercise ('The Challenge', 'Miltary Push-ups', 8, false, true);
+SELECT insert_into_workout_exercise ('The Challenge', 'Military Push-ups', 8, false, true);
 SELECT insert_into_workout_exercise ('The Challenge', 'Close Grip Pull-ups', 9, false, true);
 SELECT insert_into_workout_exercise ('The Challenge', 'Wide Push-ups', 10, false, true);
 SELECT insert_into_workout_exercise ('The Challenge', 'Close Grip Pull-ups', 11, false, true);
@@ -62,10 +63,10 @@ SELECT insert_into_workout_exercise ('CVX','Hop Overs', 16, false, true);
 SELECT insert_into_workout_exercise ('CVX','Balance Pull', 17, true, true);
 SELECT insert_into_workout_exercise ('CVX','Twist and Pviot', 18, true, true);
 
-SELECT insert_into_workout_exercise ('CVX','Side Reach Jumps', 19, true, true);
+SELECT insert_into_workout_exercise ('CVX','Side Lunge Jumps Shot', 19, true, true);
 SELECT insert_into_workout_exercise ('CVX','Crescent Chair', 20, true, true); 
 SELECT insert_into_workout_exercise ('CVX','Globe Squatters', 21, true, true);
-SELECT insert_into_workout_exercise ('CVX','Side Reach Jumps', 22, true, true);
+SELECT insert_into_workout_exercise ('CVX','Side Lunge Jumps Shot', 22, true, true);
 SELECT insert_into_workout_exercise ('CVX','Crescent Chair', 23, true, true); 
 SELECT insert_into_workout_exercise ('CVX','Globe Squatters', 24, true, true);
 
@@ -102,9 +103,9 @@ SELECT insert_into_workout_exercise ('Incinerator', 'Standard Pull-ups', 2, fals
 SELECT insert_into_workout_exercise ('Incinerator', 'Floor Flys', 3, true, true);
 SELECT insert_into_workout_exercise ('Incinerator', 'Standard Push-ups', 4, false, true);
 SELECT insert_into_workout_exercise ('Incinerator', 'Rocket Launcher Row', 5, true, true);
-SELECT insert_into_workout_exercise ('Incinerator', 'Chin-ups', 6, false, true);
+SELECT insert_into_workout_exercise ('Incinerator', 'Chin-up', 6, false, true);
 SELECT insert_into_workout_exercise ('Incinerator', '"A" Press', 7, true, true);
-SELECT insert_into_workout_exercise ('Incinerator', 'Miltary Push-ups', 8, false, true);
+SELECT insert_into_workout_exercise ('Incinerator', 'Military Push-ups', 8, false, true);
 SELECT insert_into_workout_exercise ('Incinerator', 'Monkey Pump', 9, true, true);
 SELECT insert_into_workout_exercise ('Incinerator', 'Pike Press', 10, false, true);
 SELECT insert_into_workout_exercise ('Incinerator', 'Pterodactyl Flys', 11, true, true);
@@ -114,7 +115,7 @@ SELECT insert_into_workout_exercise ('Incinerator', 'Kneeler Curls', 14, true, t
 SELECT insert_into_workout_exercise ('Incinerator', 'Hail to The Chief', 15, true, true);
 SELECT insert_into_workout_exercise ('Incinerator', 'Skyfers', 16, false, true);
 SELECT insert_into_workout_exercise ('Incinerator', 'Arm and Hammer', 17, true, true);
-SELECT insert_into_workout_exercise ('Incinerator', 'Rocket Launcher Kickbacks', 18, true, true);
+SELECT insert_into_workout_exercise ('Incinerator', 'Rocket Launcher Kickback', 18, true, true);
 --Triometrics
 SELECT insert_into_workout_exercise ('Triometrics','Triometrics routine', 1, false, false);
 --MMX
@@ -125,9 +126,9 @@ SELECT insert_into_workout_exercise ('Eccentric Upper', 'Standard Push-ups', 1, 
 SELECT insert_into_workout_exercise ('Eccentric Upper', 'Standard Pull-ups', 2, false, true);
 SELECT insert_into_workout_exercise ('Eccentric Upper', 'Military Press', 3, true, true);
 SELECT insert_into_workout_exercise ('Eccentric Upper', 'Military Push-ups', 4, false, true);
-SELECT insert_into_workout_exercise ('Eccentric Upper', 'Chin-ups', 5, false, true);
+SELECT insert_into_workout_exercise ('Eccentric Upper', 'Chin-up', 5, false, true);
 SELECT insert_into_workout_exercise ('Eccentric Upper', 'Deep Swimmer''s Press', 6, true, true);
-SELECT insert_into_workout_exercise ('Eccentric Upper', 'Fly Push-ups', 7, false, true);
+SELECT insert_into_workout_exercise ('Eccentric Upper', 'Wide Push-ups', 7, false, true);
 SELECT insert_into_workout_exercise ('Eccentric Upper', 'V Pull-ups', 8, false, true);
 SELECT insert_into_workout_exercise ('Eccentric Upper', 'Upright Hammer Pull', 9, true, true);
 SELECT insert_into_workout_exercise ('Eccentric Upper', 'Staggered Push-ups', 10, false, true);
@@ -139,7 +140,7 @@ SELECT insert_into_workout_exercise ('Eccentric Upper', 'Pterodactyl Flys', 15, 
 SELECT insert_into_workout_exercise ('Eccentric Upper', 'Rocket Launcher Kickback', 16, true, true);
 SELECT insert_into_workout_exercise ('Eccentric Upper', 'Flip Flop Combo', 17, true, true);
 SELECT insert_into_workout_exercise ('Eccentric Upper', 'Skyfers', 18, false, true);
-SELECT insert_into_workout_exercise ('Eccentric Upper', 'Kneeler Curl', 19, true, true);
+SELECT insert_into_workout_exercise ('Eccentric Upper', 'Kneeler Curls', 19, true, true);
 
 --Eccentric Lower
 SELECT insert_into_workout_exercise ('Eccentric Lower', 'Squats', 1, true, true);
@@ -171,7 +172,7 @@ SELECT insert_into_workout_exercise ('Decelerator', 'Vaulter Pull-ups', 12, fals
 SELECT insert_into_workout_exercise ('Decelerator', 'Elevator Tiptoe Squats', 13, true, true);
 SELECT insert_into_workout_exercise ('Decelerator', 'Superman/Bow', 14, false, true);
 SELECT insert_into_workout_exercise ('Decelerator', 'Spinning Plyo Squat Lunges', 15, false, true);
-SELECT insert_into_workout_exercise ('Decelerator', 'Big Brother Burpees', 16, false, true);
+SELECT insert_into_workout_exercise ('Decelerator', 'Super Burpee', 16, false, true);
 --Cold Start
 SELECT insert_into_workout_exercise ('Cold Start', 'Cold Start routine', 1, false, true);
 --Complex Upper

@@ -1,6 +1,9 @@
-﻿-- Sequence: workout_id_seq
+﻿\c exercise_db;
 
-DROP SEQUENCE IF EXISTS workout_id_seq;
+DROP TABLE IF EXISTS workouts CASCADE;
+DROP SEQUENCE IF EXISTS workout_id_seq CASCADE;
+
+-- Sequence: workout_id_seq
 
 CREATE SEQUENCE workout_id_seq
   INCREMENT 1
@@ -10,9 +13,7 @@ CREATE SEQUENCE workout_id_seq
 
 -- Table: workouts
 
-DROP TABLE IF EXISTS workouts;
-
-CREATE TABLE public.workouts
+CREATE TABLE workouts
 (
   workout_id integer NOT NULL DEFAULT nextval('workout_id_seq'::regclass),
   workout_name text NOT NULL,
