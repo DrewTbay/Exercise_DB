@@ -15,7 +15,7 @@ CREATE OR REPLACE FUNCTION insert_into_schedule_workout(
     _week_order integer)
   RETURNS void AS
 $BODY$
-    INSERT INTO public.schedule_workout(
+    INSERT INTO schedule_workout(
         schedule_id, 
         workout_id, 
         day_order,
@@ -34,4 +34,8 @@ $BODY$
   LANGUAGE sql VOLATILE
   COST 100;
   
-GRANT EXECUTE ON insert_into_schedule_workout TO exercise_conn;
+GRANT EXECUTE ON insert_into_schedule_workout(
+    text,
+    text,
+    integer,
+    integer) TO exercise_conn;

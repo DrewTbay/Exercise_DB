@@ -30,7 +30,7 @@ CREATE TABLE login_attempts
 
 -- Index: fki_user_fkey
 
-CREATE INDEX fki_user_fkey
+CREATE INDEX fki_la_user_fkey
   ON login_attempts
   USING btree
   (user_id);

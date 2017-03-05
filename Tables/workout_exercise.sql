@@ -35,13 +35,13 @@ CREATE TABLE workout_exercise
 -- Index: fki_we_exercise_fkey
 
 CREATE INDEX fki_we_exercise_fkey
-  ON public.workout_exercise
+  ON workout_exercise
   USING btree
   (exercise_id);
 
 -- Index: fki_we_workout_fkey
 
 CREATE INDEX fki_we_workout_fkey
-  ON public.workout_exercise
+  ON workout_exercise
   USING btree
   (workout_id);

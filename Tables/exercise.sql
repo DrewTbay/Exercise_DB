@@ -13,7 +13,7 @@ CREATE SEQUENCE exercise_id_seq
 
 -- Table: exercises
 
-CREATE TABLE public.exercises
+CREATE TABLE exercises
 (
   exercise_id integer NOT NULL DEFAULT nextval('exercise_id_seq'::regclass),
   exercise_name text NOT NULL,

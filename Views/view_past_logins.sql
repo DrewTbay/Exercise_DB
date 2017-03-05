@@ -12,3 +12,5 @@ CREATE OR REPLACE VIEW view_past_logins AS
     la.last_time_active
   FROM users u
     JOIN login_attempts la ON la.user_id = u.user_id;
+
+GRANT SELECT ALL ON view_past_logins TO exercise_conn;

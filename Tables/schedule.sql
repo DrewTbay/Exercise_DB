@@ -5,7 +5,7 @@ DROP SEQUENCE IF EXISTS schedule_id_seq CASCADE;
 
 -- Sequence: schedule_id_seq
 
-CREATE SEQUENCE public.schedule_id_seq
+CREATE SEQUENCE schedule_id_seq
   INCREMENT 1
   MINVALUE 1
   MAXVALUE 9223372036854775807

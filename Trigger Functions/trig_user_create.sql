@@ -16,7 +16,7 @@ BEGIN
     SELECT schedule_id 
     FROM schedules
   LOOP
-    INSERT INTO schedule_log (
+    INSERT INTO current_schedule (
       schedule_id,
       user_id,
       current_week,

@@ -11,7 +11,7 @@ CREATE OR REPLACE FUNCTION update_current_schedule(
     _set_day integer,
     _set_period integer)
   RETURNS void AS
-$BODY$
+$$
    UPDATE current_schedule
    SET current_week = _set_week,
       current_day = _set_day,

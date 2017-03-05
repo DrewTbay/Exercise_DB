@@ -40,6 +40,6 @@ CREATE INDEX fki_swl_schedule_workout_fkey
 -- Index: fki_swl_users_fkey
 
 CREATE INDEX fki_swl_users_fkey
-  ON users
+  ON schedule_workout_log
   USING btree
   (user_id);
