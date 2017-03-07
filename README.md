@@ -4,8 +4,9 @@ Database for the Exericse Logging
 The following commands will need to be run:
 
 createuser exercise_conn -P -D- R -S
-createdb exercise_db -O exercise_conn
-psql -f schedule.sql
-psql -f workout.sql 
 
-Changes are pending :P.
+createdb exercise_db -O exercise_conn
+
+psql -f schedule.sql
+
+psql -f workout.sql 
