@@ -67,5 +67,3 @@ $BODY$
 $BODY$
   LANGUAGE sql VOLATILE
   COST 100;
-
-GRANT EXECUTE ON add_exercise_log TO exercise_conn;
