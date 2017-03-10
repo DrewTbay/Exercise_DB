@@ -2,7 +2,7 @@
 
 -- View: view_current_workouts
 
-DROP VIEW IS EXISTS view_current_workouts;
+DROP VIEW IF EXISTS view_current_workouts;
 
 CREATE OR REPLACE VIEW view_current_workouts AS 
   SELECT s.schedule_name,
@@ -29,5 +29,3 @@ CREATE OR REPLACE VIEW view_current_workouts AS
       ON swl.schedule_workout_id = sw.schedule_workout_id 
       AND swl.period = cs.current_period 
       AND u.user_id = swl.user_id;
-
-GRANT SELECT ALL ON view_current_workouts TO exercise_conn;

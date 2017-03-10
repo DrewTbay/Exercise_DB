@@ -15,5 +15,3 @@ CREATE OR REPLACE VIEW view_exercises AS
       ON e.exercise_id = we.exercise_id
     JOIN workouts w 
       ON we.workout_id = w.workout_id;
-
-GRANT SELECT ALL ON view_exercises TO exercise_conn;

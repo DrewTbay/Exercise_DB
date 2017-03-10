@@ -8,9 +8,7 @@ CREATE OR REPLACE VIEW view_past_logins AS
  SELECT u.user_name,
     la.attempt_date,
     la.successful_attempt,
-    la.token,
+    la.token,
     la.last_time_active
   FROM users u
     JOIN login_attempts la ON la.user_id = u.user_id;
-
-GRANT SELECT ALL ON view_past_logins TO exercise_conn;
