@@ -1,8 +1,8 @@
 ﻿\c exercise_db;
 
 -- Function: trig_user_create()
-
-DROP FUNCTION IF EXISTS trig_user_create();
+DROP TRIGGER IF EXISTS create_schedule_logs ON users;
+DROP FUNCTION IF EXISTS trig_user_create() CASCADE;
 
 CREATE OR REPLACE FUNCTION trig_user_create()
   RETURNS trigger AS
@@ -30,12 +30,12 @@ BEGIN
       1
     );
   END LOOP;
+
+  RETURN NULL; --result is ignored since this is an AFTER trigger
 END
 $BODY$
   LANGUAGE plpgsql VOLATILE
   COST 100;
-
-DROP TRIGGER IF EXISTS create_schedule_logs ON users;
 
 CREATE TRIGGER create_current_schedules AFTER INSERT ON users
   FOR EACH ROW EXECUTE PROCEDURE trig_user_create();
