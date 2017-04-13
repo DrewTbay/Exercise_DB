@@ -20,6 +20,8 @@ CREATE TABLE users
   user_password text NOT NULL,
   salt text NOT NULL,
   user_email text NOT NULL,
-  CONSTRAINT users_pkey PRIMARY KEY (user_id)
+  CONSTRAINT users_pkey PRIMARY KEY (user_id),
+  CONSTRAINT unique_user_email UNIQUE (user_email),
+  CONSTRAINT unique_user_name UNIQUE (user_name)
 );
 
