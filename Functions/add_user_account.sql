@@ -1,4 +1,9 @@
-﻿CREATE OR REPLACE FUNCTION add_user_account(
+﻿\c exercise_db;
+
+-- Function: add_user_account(text,text,text,text)
+DROP FUNCTION IF EXISTS add_user_account(text,text,text,text); 
+
+CREATE OR REPLACE FUNCTION add_user_account(
   _user_name text,
   _user_email text,
   _password text,
